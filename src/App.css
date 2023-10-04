@@ -1,0 +1,145 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffeaa7;
+}
+
+.App {
+  /* border: 1px solid pink; */
+  width: 80vw;
+  max-width: 1200px;
+  
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.App .title-container {
+  /* border: 1px solid white; */
+  width: 80vw;
+  max-width: 1200px;
+  font-size: 40px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+  position: fixed;
+  z-index: 10;
+  background: #ffeaa7ee;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main {
+  /* border: 1px solid green; */
+  width: 80vw;
+  max-width: 1200px;
+  /* height: 100%; */
+  
+  position: relative;
+  top: 150px;
+}
+
+.avatar-wrapper {
+  border: 15px solid #0baf94;
+  background: #f5f6fa;
+  border-radius: 40px;
+  width: 388px;
+  height: 445px;
+  position: fixed;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar {
+  /* border: 1px solid red; */
+  width: 260px;
+  height: 275.75px;
+/*   
+  position: relative; */
+}
+
+.avatar-wrapper .text-center {
+  /* border: 1px solid yellow; */
+  margin-top: 10px;
+
+  width: 260px;
+  text-align: center;
+}
+
+.avatar-wrapper .text-center .button {
+  background-color: #ca5119;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  margin: 0 10px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.list-container {
+  /* border: 1px solid green; */
+  width: 700px;
+  height: 100%;
+
+  position: absolute;
+  right: 0;
+}
+
+.list-section {
+  /* border: 1px solid green; */
+  width: 100%;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list {
+  /* border: 1px solid red; */
+  border: 5px solid orange;
+  background-color: rgba(255,166,0,.4);
+  border-radius: 15px;
+  width: 100%;
+  
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.list .square {
+  /* border: 1px solid yellow; */
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.151);
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  width: 50px;
+}
+
+
+.list .square:hover {
+  background-color: hsla(9,100%,73%,.315);
+  transition-duration: .2s;
+  cursor: pointer;
+}
+
+.list .square img {
+  width: 50px;
+}
