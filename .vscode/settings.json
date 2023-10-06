@@ -14,4 +14,5 @@
 
   "prettier.requireConfig": true,
   "prettier.useEditorConfig": false,
+  "liveServer.settings.multiRootWorkspaceName": "1-character-customization-app",
 }
